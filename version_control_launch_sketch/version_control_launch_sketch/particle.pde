@@ -8,6 +8,9 @@ class Particle {
     position = new PVector(x, y);
     velocity = new PVector(random(-2, 2), random(-2, 2));
     acceleration = new PVector(0, 0.5);
+    
+    //particles randomize their colour
+    fill(random(0, 256), random(0, 256), random(0, 256));
   }
   
   void update(){
